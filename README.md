@@ -7,11 +7,12 @@
 ## 설치
 
 yarn classic을 사용하고 있습니다.
+
 `yarn --version`으로 현재 사용중인 버전을 확인하시고 v2 이상인 경우 `yarn set version classic`을 실행해주세요.
 
 ### Install Yarn Dependencies
 ```
-yarn install s
+yarn install
 ```
 
 ### Build Ios Application
