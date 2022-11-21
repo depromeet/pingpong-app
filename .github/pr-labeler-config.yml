@@ -5,3 +5,5 @@
 'Type: Style': ['design/*', 'style/*']
 'Type: Chore': ['doc/*', 'misc/*', 'chore/*', 'deps/*']
 'Type: Bug': ['fix/*', 'fix*']
+
+'Setting': ['setting/*', 'settings/*']
