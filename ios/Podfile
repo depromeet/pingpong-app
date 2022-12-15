@@ -6,6 +6,9 @@ install! 'cocoapods', :deterministic_uuids => false
 
 target 'winwin_app' do
   config = use_native_modules!
+  
+  pod 'FirebaseCore', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
 
   # Flags change depending on the env values.
   flags = get_default_flags()
@@ -39,5 +42,7 @@ target 'winwin_app' do
       :mac_catalyst_enabled => false
     )
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
+    
+    pod 'Firebase/Messaging'
   end
 end
