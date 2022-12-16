@@ -1,23 +1,22 @@
-import { BASE_URL } from '@env';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+import HomeScreen from './src/screens/HomeScreen';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <>
-      <StatusBar barStyle="default" />
-      <SafeAreaView style={styles.container}>
-        <WebView source={{ uri: BASE_URL }} />
-      </SafeAreaView>
-    </>
+    <NavigationContainer>
+      <SafeAreaProvider>
+        <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Home" component={HomeScreen} />
+        </Stack.Navigator>
+      </SafeAreaProvider>
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;
