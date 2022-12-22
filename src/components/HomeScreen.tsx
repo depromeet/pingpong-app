@@ -1,32 +1,49 @@
+import messaging from '@react-native-firebase/messaging';
 import { BASE_URL } from '@env';
-import React, { useCallback, useState } from 'react';
-import { RefreshControl, ScrollView, StatusBar, StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { WebView } from 'react-native-webview';
+import { useEffect, useRef } from 'react';
+import { Linking, StatusBar, StyleSheet, View } from 'react-native';
+import { WebView, WebViewMessageEvent } from 'react-native-webview';
 
 const HomeScreen = () => {
-  const [refreshing, setRefreshing] = useState(false);
+  const webviewRef = useRef<WebView>(null);
 
-  const onRefresh = useCallback(() => {
-    setRefreshing(true);
+  const onEventReceive = (message: WebViewMessageEvent) => {
+    const event = (JSON.parse(message.nativeEvent.data) as { event: 'setting' }).event; //add if needed
 
-    setTimeout(() => {
-      setRefreshing(false);
-    }, 2000);
-  }, []);
+    switch (event) {
+      case 'setting':
+        Linking.openSettings();
+    }
+  };
+
+  const onEventSend = async () => {
+    const userPermission = await messaging().hasPermission();
+
+    console.log('userPermission', userPermission);
+
+    webviewRef.current?.postMessage(
+      JSON.stringify({ alarm: userPermission === 1 ? 'true' : 'false' }),
+    );
+  };
+
+  useEffect(() => {
+    onEventSend();
+    //FIXME: dependency
+  }, [messaging]);
 
   return (
     <>
       <StatusBar barStyle="default" />
-      <SafeAreaView style={styles.container}>
-        <ScrollView refreshControl={<RefreshControl {...{ onRefresh, refreshing }} />}>
-          <WebView
-            source={{ uri: BASE_URL }}
-            allowsBackForwardNavigationGestures
-            overScrollMode="never"
-          />
-        </ScrollView>
-      </SafeAreaView>
+      <View style={styles.container}>
+        <WebView
+          ref={webviewRef}
+          source={{ uri: BASE_URL }}
+          allowsBackForwardNavigationGestures
+          overScrollMode="never"
+          onMessage={onEventReceive}
+          onLoad={onEventSend}
+        />
+      </View>
     </>
   );
 };
@@ -34,6 +51,7 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 30, //FIXME: replace to web margin..
   },
 });
 
