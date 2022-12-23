@@ -3,33 +3,35 @@ import { BASE_URL } from '@env';
 import { useEffect, useRef } from 'react';
 import { Linking, StatusBar, StyleSheet, View } from 'react-native';
 import { WebView, WebViewMessageEvent } from 'react-native-webview';
+import { useAppState } from '../hooks/state';
 
 const HomeScreen = () => {
   const webviewRef = useRef<WebView>(null);
 
+  const { appStateVisible } = useAppState();
+
+  const sendUserPermission = async () => {
+    const userPermission = await messaging().hasPermission();
+
+    webviewRef.current?.postMessage(userPermission === 1 ? 'true' : 'false');
+  };
+
   const onEventReceive = (message: WebViewMessageEvent) => {
-    const event = (JSON.parse(message.nativeEvent.data) as { event: 'setting' }).event; //add if needed
+    const { event } = JSON.parse(message.nativeEvent.data) as { event: 'setting' | 'permission' };
 
     switch (event) {
       case 'setting':
         Linking.openSettings();
+      case 'permission':
+        sendUserPermission();
     }
   };
 
-  const onEventSend = async () => {
-    const userPermission = await messaging().hasPermission();
-
-    console.log('userPermission', userPermission);
-
-    webviewRef.current?.postMessage(
-      JSON.stringify({ alarm: userPermission === 1 ? 'true' : 'false' }),
-    );
-  };
-
   useEffect(() => {
-    onEventSend();
-    //FIXME: dependency
-  }, [messaging]);
+    if (appStateVisible === 'active') {
+      sendUserPermission();
+    }
+  }, [appStateVisible]);
 
   return (
     <>
@@ -41,7 +43,6 @@ const HomeScreen = () => {
           allowsBackForwardNavigationGestures
           overScrollMode="never"
           onMessage={onEventReceive}
-          onLoad={onEventSend}
         />
       </View>
     </>
