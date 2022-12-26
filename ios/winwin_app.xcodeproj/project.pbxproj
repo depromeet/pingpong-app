@@ -12,7 +12,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1A8CAA83B69E55090314B544 /* Pods_winwin_app_winwin_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDCADBBE0B0B7FDCAA7EC02 /* Pods_winwin_app_winwin_appTests.framework */; };
-		3669CA342950AD2F008D3923 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3669CA332950AD2F008D3923 /* GoogleService-Info.plist */; };
+		361113652955931800A9E599 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 361113642955931800A9E599 /* GoogleService-Info.plist */; };
 		59FEEC3A8E1AB9B49593B7FF /* Pods_winwin_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D41EEC4513A2312873220D /* Pods_winwin_app.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = winwin_app/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = winwin_app/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = winwin_app/main.m; sourceTree = "<group>"; };
-		3669CA332950AD2F008D3923 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		361113642955931800A9E599 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-winwin_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winwin_app.debug.xcconfig"; path = "Target Support Files/Pods-winwin_app/Pods-winwin_app.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-winwin_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winwin_app.release.xcconfig"; path = "Target Support Files/Pods-winwin_app/Pods-winwin_app.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-winwin_app-winwin_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winwin_app-winwin_appTests.debug.xcconfig"; path = "Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		13B07FAE1A68108700A75B9A /* winwin_app */ = {
 			isa = PBXGroup;
 			children = (
-				3669CA332950AD2F008D3923 /* GoogleService-Info.plist */,
+				361113642955931800A9E599 /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -250,8 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				361113652955931800A9E599 /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				3669CA342950AD2F008D3923 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

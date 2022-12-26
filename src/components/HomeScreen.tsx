@@ -1,32 +1,50 @@
+import messaging from '@react-native-firebase/messaging';
 import { BASE_URL } from '@env';
-import React, { useCallback, useState } from 'react';
-import { RefreshControl, ScrollView, StatusBar, StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { WebView } from 'react-native-webview';
+import { useEffect, useRef } from 'react';
+import { Linking, StatusBar, StyleSheet, View } from 'react-native';
+import { WebView, WebViewMessageEvent } from 'react-native-webview';
+import { useAppState } from '../hooks/state';
 
 const HomeScreen = () => {
-  const [refreshing, setRefreshing] = useState(false);
+  const webviewRef = useRef<WebView>(null);
 
-  const onRefresh = useCallback(() => {
-    setRefreshing(true);
+  const { appStateVisible } = useAppState();
 
-    setTimeout(() => {
-      setRefreshing(false);
-    }, 2000);
-  }, []);
+  const sendUserPermission = async () => {
+    const userPermission = await messaging().hasPermission();
+
+    webviewRef.current?.postMessage(userPermission === 1 ? 'true' : 'false');
+  };
+
+  const onEventReceive = (message: WebViewMessageEvent) => {
+    const { event } = JSON.parse(message.nativeEvent.data) as { event: 'setting' | 'permission' };
+
+    switch (event) {
+      case 'setting':
+        Linking.openSettings();
+      case 'permission':
+        sendUserPermission();
+    }
+  };
+
+  useEffect(() => {
+    if (appStateVisible === 'active') {
+      sendUserPermission();
+    }
+  }, [appStateVisible]);
 
   return (
     <>
       <StatusBar barStyle="default" />
-      <SafeAreaView style={styles.container}>
-        <ScrollView refreshControl={<RefreshControl {...{ onRefresh, refreshing }} />}>
-          <WebView
-            source={{ uri: BASE_URL }}
-            allowsBackForwardNavigationGestures
-            overScrollMode="never"
-          />
-        </ScrollView>
-      </SafeAreaView>
+      <View style={styles.container}>
+        <WebView
+          ref={webviewRef}
+          source={{ uri: BASE_URL }}
+          allowsBackForwardNavigationGestures
+          overScrollMode="never"
+          onMessage={onEventReceive}
+        />
+      </View>
     </>
   );
 };
@@ -34,6 +52,7 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 30, //FIXME: replace to web margin..
   },
 });
 
