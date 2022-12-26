@@ -14,6 +14,7 @@
 #import <React/RCTSurfacePresenterBridgeAdapter.h>
 #import <ReactCommon/RCTTurboModuleManager.h>
 
+
 #import <react/config/ReactNativeConfig.h>
 
 static NSString *const kRNConcurrentRoot = @"concurrentRoot";
@@ -33,6 +34,8 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 {
   [FIRApp configure];
   RCTAppSetupPrepareApp(application);
+  
+  sleep(2);
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
 
@@ -58,6 +61,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
   return YES;
 }
 
