@@ -1,12 +1,12 @@
 import messaging from '@react-native-firebase/messaging';
 import { useEffect } from 'react';
+import { saveFCMToken } from '../firebase/db';
 
 export const useFCMToken = () => {
   const registerToken = async () => {
     try {
       const fcmToken = await messaging().getToken();
-      //TODO: have to save at firebase DB?
-      console.log('fcmToken', fcmToken);
+      saveFCMToken(fcmToken);
     } catch (error) {
       console.log('ERROR: _updateTokenToServer');
       console.log(error);
