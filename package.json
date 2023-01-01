@@ -18,6 +18,7 @@
     "@react-native-firebase/messaging": "^16.5.0",
     "@react-navigation/native": "6.0.14",
     "@react-navigation/native-stack": "6.9.2",
+    "firebase": "^9.15.0",
     "react": "18.1.0",
     "react-native": "0.70.3",
     "react-native-push-notification": "^8.1.1",
@@ -52,7 +53,7 @@
     "metro-react-native-babel-preset": "0.72.3",
     "npm": "^9.2.0",
     "prettier": "2.7.1",
-    "react-native-dotenv": "3.4.2",
+    "react-native-dotenv": "^3.4.6",
     "react-test-renderer": "18.1.0",
     "typescript": "^4.8.3"
   }
