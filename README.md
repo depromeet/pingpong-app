@@ -1,4 +1,4 @@
-# WinWin Client
+# pingpong Client
 
 디프만 12기 2팀 '윈윈' 프로젝트의 Application repository입니다.
 <br />

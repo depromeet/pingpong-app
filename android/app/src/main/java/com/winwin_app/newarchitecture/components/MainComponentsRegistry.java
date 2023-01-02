@@ -1,4 +1,4 @@
-package com.winwin_app.newarchitecture.components;
+package com.pingpong_app.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

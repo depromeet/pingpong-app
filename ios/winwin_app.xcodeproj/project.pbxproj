@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* winwin_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* winwin_appTests.m */; };
+		00E356F31AD99517003FC87E /* pingpong_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pingpong_appTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1A8CAA83B69E55090314B544 /* Pods_winwin_app_winwin_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDCADBBE0B0B7FDCAA7EC02 /* Pods_winwin_app_winwin_appTests.framework */; };
+		1A8CAA83B69E55090314B544 /* Pods_pingpong_app_pingpong_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDCADBBE0B0B7FDCAA7EC02 /* Pods_pingpong_app_pingpong_appTests.framework */; };
 		36C9C503295DC78500EDE3ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36C9C502295DC78500EDE3ED /* GoogleService-Info.plist */; };
-		59FEEC3A8E1AB9B49593B7FF /* Pods_winwin_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D41EEC4513A2312873220D /* Pods_winwin_app.framework */; };
+		59FEEC3A8E1AB9B49593B7FF /* Pods_pingpong_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D41EEC4513A2312873220D /* Pods_pingpong_app.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -23,28 +23,28 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = winwin_app;
+			remoteInfo = pingpong_app;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* winwin_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = winwin_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* pingpong_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pingpong_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* winwin_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = winwin_appTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* winwin_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winwin_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = winwin_app/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = winwin_app/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = winwin_app/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = winwin_app/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = winwin_app/main.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* pingpong_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pingpong_appTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* pingpong_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pingpong_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = pingpong_app/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = pingpong_app/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = pingpong_app/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pingpong_app/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = pingpong_app/main.m; sourceTree = "<group>"; };
 		36C9C502295DC78500EDE3ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-winwin_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winwin_app.debug.xcconfig"; path = "Target Support Files/Pods-winwin_app/Pods-winwin_app.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-winwin_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winwin_app.release.xcconfig"; path = "Target Support Files/Pods-winwin_app/Pods-winwin_app.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-winwin_app-winwin_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winwin_app-winwin_appTests.debug.xcconfig"; path = "Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = winwin_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-winwin_app-winwin_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winwin_app-winwin_appTests.release.xcconfig"; path = "Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests.release.xcconfig"; sourceTree = "<group>"; };
-		9FDCADBBE0B0B7FDCAA7EC02 /* Pods_winwin_app_winwin_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_winwin_app_winwin_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0D41EEC4513A2312873220D /* Pods_winwin_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_winwin_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-pingpong_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pingpong_app.debug.xcconfig"; path = "Target Support Files/Pods-pingpong_app/Pods-pingpong_app.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-pingpong_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pingpong_app.release.xcconfig"; path = "Target Support Files/Pods-pingpong_app/Pods-pingpong_app.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-pingpong_app-pingpong_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pingpong_app-pingpong_appTests.debug.xcconfig"; path = "Target Support Files/Pods-pingpong_app-pingpong_appTests/Pods-pingpong_app-pingpong_appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = pingpong_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-pingpong_app-pingpong_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pingpong_app-pingpong_appTests.release.xcconfig"; path = "Target Support Files/Pods-pingpong_app-pingpong_appTests/Pods-pingpong_app-pingpong_appTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FDCADBBE0B0B7FDCAA7EC02 /* Pods_pingpong_app_pingpong_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pingpong_app_pingpong_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D41EEC4513A2312873220D /* Pods_pingpong_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pingpong_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A8CAA83B69E55090314B544 /* Pods_winwin_app_winwin_appTests.framework in Frameworks */,
+				1A8CAA83B69E55090314B544 /* Pods_pingpong_app_pingpong_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,20 +61,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59FEEC3A8E1AB9B49593B7FF /* Pods_winwin_app.framework in Frameworks */,
+				59FEEC3A8E1AB9B49593B7FF /* Pods_pingpong_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* winwin_appTests */ = {
+		00E356EF1AD99517003FC87E /* pingpong_appTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* winwin_appTests.m */,
+				00E356F21AD99517003FC87E /* pingpong_appTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = winwin_appTests;
+			path = pingpong_appTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -85,7 +85,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* winwin_app */ = {
+		13B07FAE1A68108700A75B9A /* pingpong_app */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -96,15 +96,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = winwin_app;
+			name = pingpong_app;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				E0D41EEC4513A2312873220D /* Pods_winwin_app.framework */,
-				9FDCADBBE0B0B7FDCAA7EC02 /* Pods_winwin_app_winwin_appTests.framework */,
+				E0D41EEC4513A2312873220D /* Pods_pingpong_app.framework */,
+				9FDCADBBE0B0B7FDCAA7EC02 /* Pods_pingpong_app_pingpong_appTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,9 +119,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* winwin_app */,
+				13B07FAE1A68108700A75B9A /* pingpong_app */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* winwin_appTests */,
+				00E356EF1AD99517003FC87E /* pingpong_appTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -134,8 +134,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* winwin_app.app */,
-				00E356EE1AD99517003FC87E /* winwin_appTests.xctest */,
+				13B07F961A680F5B00A75B9A /* pingpong_app.app */,
+				00E356EE1AD99517003FC87E /* pingpong_appTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-winwin_app.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-winwin_app.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-winwin_app-winwin_appTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-winwin_app-winwin_appTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-pingpong_app.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-pingpong_app.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-pingpong_app-pingpong_appTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-pingpong_app-pingpong_appTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* winwin_appTests */ = {
+		00E356ED1AD99517003FC87E /* pingpong_appTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "winwin_appTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "pingpong_appTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -170,14 +170,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = winwin_appTests;
-			productName = winwin_appTests;
-			productReference = 00E356EE1AD99517003FC87E /* winwin_appTests.xctest */;
+			name = pingpong_appTests;
+			productName = pingpong_appTests;
+			productReference = 00E356EE1AD99517003FC87E /* pingpong_appTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* winwin_app */ = {
+		13B07F861A680F5B00A75B9A /* pingpong_app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "winwin_app" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "pingpong_app" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -193,9 +193,9 @@
 			);
 			dependencies = (
 			);
-			name = winwin_app;
-			productName = winwin_app;
-			productReference = 13B07F961A680F5B00A75B9A /* winwin_app.app */;
+			name = pingpong_app;
+			productName = pingpong_app;
+			productReference = 13B07F961A680F5B00A75B9A /* pingpong_app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "winwin_app" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "pingpong_app" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -231,8 +231,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* winwin_app */,
-				00E356ED1AD99517003FC87E /* winwin_appTests */,
+				13B07F861A680F5B00A75B9A /* pingpong_app */,
+				00E356ED1AD99517003FC87E /* pingpong_appTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,15 +280,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-winwin_app/Pods-winwin_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-pingpong_app/Pods-pingpong_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-winwin_app/Pods-winwin_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-pingpong_app/Pods-pingpong_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-winwin_app/Pods-winwin_app-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pingpong_app/Pods-pingpong_app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3B97A3294F0F82679486F40D /* [CP] Copy Pods Resources */ = {
@@ -297,15 +297,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-winwin_app/Pods-winwin_app-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-pingpong_app/Pods-pingpong_app-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-winwin_app/Pods-winwin_app-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-pingpong_app/Pods-pingpong_app-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-winwin_app/Pods-winwin_app-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pingpong_app/Pods-pingpong_app-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5070B85F6907B9B53127D595 /* [CP] Copy Pods Resources */ = {
@@ -314,15 +314,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-pingpong_app-pingpong_appTests/Pods-pingpong_app-pingpong_appTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-pingpong_app-pingpong_appTests/Pods-pingpong_app-pingpong_appTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pingpong_app-pingpong_appTests/Pods-pingpong_app-pingpong_appTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -340,7 +340,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-winwin_app-winwin_appTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-pingpong_app-pingpong_appTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,7 +375,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-winwin_app-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-pingpong_app-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -388,15 +388,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-pingpong_app-pingpong_appTests/Pods-pingpong_app-pingpong_appTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-pingpong_app-pingpong_appTests/Pods-pingpong_app-pingpong_appTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-winwin_app-winwin_appTests/Pods-winwin_app-winwin_appTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pingpong_app-pingpong_appTests/Pods-pingpong_app-pingpong_appTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -425,7 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* winwin_appTests.m in Sources */,
+				00E356F31AD99517003FC87E /* pingpong_appTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +443,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* winwin_app */;
+			target = 13B07F861A680F5B00A75B9A /* pingpong_app */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -451,14 +451,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-winwin_app-winwin_appTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-pingpong_app-pingpong_appTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = winwin_appTests/Info.plist;
+				INFOPLIST_FILE = pingpong_appTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,17 +472,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/winwin_app.app/winwin_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pingpong_app.app/pingpong_app";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-winwin_app-winwin_appTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-pingpong_app-pingpong_appTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = winwin_appTests/Info.plist;
+				INFOPLIST_FILE = pingpong_appTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,23 +496,23 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/winwin_app.app/winwin_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pingpong_app.app/pingpong_app";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-winwin_app.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-pingpong_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = winwin_app/winwin_app.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pingpong_app/pingpong_app.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6V5RPMJB93;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = winwin_app/Info.plist;
+				INFOPLIST_FILE = pingpong_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,7 +523,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = winwin_app;
+				PRODUCT_NAME = pingpong_app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -533,16 +533,16 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-winwin_app.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-pingpong_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = winwin_app/winwin_app.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pingpong_app/pingpong_app.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6V5RPMJB93;
-				INFOPLIST_FILE = winwin_app/Info.plist;
+				INFOPLIST_FILE = pingpong_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,7 +554,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = winwin_app;
+				PRODUCT_NAME = pingpong_app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -701,7 +701,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "winwin_appTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "pingpong_appTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -710,7 +710,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "winwin_app" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "pingpong_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -719,7 +719,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "winwin_app" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "pingpong_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
