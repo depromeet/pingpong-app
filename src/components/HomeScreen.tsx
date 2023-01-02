@@ -1,11 +1,19 @@
 import messaging from '@react-native-firebase/messaging';
 import { BASE_URL } from '@env';
 import { useEffect, useRef } from 'react';
-import { Linking, StatusBar, StyleSheet, View } from 'react-native';
+import { Button, Linking, StatusBar, StyleSheet, Text, View } from 'react-native';
 import { WebView, WebViewMessageEvent } from 'react-native-webview';
 import { useAppState } from '../hooks/state';
+import {
+  NavigationContainerRefWithCurrent,
+  useNavigationContainerRef,
+} from '@react-navigation/native';
 
-const HomeScreen = () => {
+const HomeScreen = ({
+  navigation,
+}: {
+  navigation: NavigationContainerRefWithCurrent<ReactNavigation.RootParamList>;
+}) => {
   const webviewRef = useRef<WebView>(null);
 
   const { appStateVisible } = useAppState();
@@ -33,10 +41,27 @@ const HomeScreen = () => {
     }
   }, [appStateVisible]);
 
-  return (
+  useEffect(() => {
+    Linking.addEventListener('url', (e) => {
+      const route = e.url.replace(/.*?:\/\//g, '');
+      console.log('route', route);
+      navigation.navigate('https://open.kakao.com/o/smNXVuWe');
+    });
+
+    // return () => {
+    //   Linking.removeEventListener('https://open.kakao.com/o/smNXVuWe');
+    // };
+  });
+
+  https: return (
     <>
       <StatusBar barStyle="default" />
-      <View style={styles.container}>
+      <Text>Details Screen</Text>
+      <Button
+        title="Go to Home"
+        onPress={() => navigation.navigate('pingpong://https://open.kakao.com/o/smNXVuWe')}
+      />
+      {/* <View style={styles.container}>
         <WebView
           ref={webviewRef}
           source={{ uri: BASE_URL }}
@@ -44,7 +69,7 @@ const HomeScreen = () => {
           overScrollMode="never"
           onMessage={onEventReceive}
         />
-      </View>
+      </View> */}
     </>
   );
 };
