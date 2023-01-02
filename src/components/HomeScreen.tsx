@@ -39,7 +39,7 @@ const HomeScreen = () => {
       <View style={styles.container}>
         <WebView
           ref={webviewRef}
-          source={{ uri: BASE_URL }}
+          source={{ uri: 'http://192.168.45.153:3000/' }}
           allowsBackForwardNavigationGestures
           overScrollMode="never"
           onMessage={onEventReceive}
