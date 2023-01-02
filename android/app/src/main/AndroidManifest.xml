@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.winwin_app">
+  package="com.pingpong">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
