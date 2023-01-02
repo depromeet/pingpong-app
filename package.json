@@ -1,6 +1,6 @@
 {
-  "name": "winwin_app",
-  "version": "0.0.1",
+  "name": "pingpong_app",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
