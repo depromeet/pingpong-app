@@ -1,4 +1,4 @@
-package com.winwin_app;
+package com.pingpong;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "winwin_app";
+    return "pingpong";
   }
 
   /**

@@ -1,4 +1,4 @@
-package com.winwin_app.newarchitecture;
+package com.pingpong.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.winwin_app.BuildConfig;
-import com.winwin_app.newarchitecture.components.MainComponentsRegistry;
-import com.winwin_app.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.pingpong.BuildConfig;
+import com.pingpong.newarchitecture.components.MainComponentsRegistry;
+import com.pingpong.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
