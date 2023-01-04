@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/hwang-yena/Documents/project/pingpong-app/ios/pingpong.xcodeproj">
+      location = "group:/Users/doyoonlee/Desktop/dev_else/pingpong-app/ios/pingpong.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:pingpong.xcodeproj">
    </FileRef>
 </Workspace>
