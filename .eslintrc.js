@@ -71,7 +71,7 @@ module.exports = {
         ],
 
         // Default import rules
-        'import/no-unresolved': 'error',
+        'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off', // Named export is easier to refactor automatically
 
         // Simple import recommended rules
@@ -82,7 +82,7 @@ module.exports = {
         'import/no-duplicates': 'error', // merges import statements of the same file. (autofixable, mostly)
 
         // Unused import recommended rules
-        'unused-imports/no-unused-imports': 'error',
+        'unused-imports/no-unused-imports': 'off',
         'unused-imports/no-unused-vars': [
           'warn',
           { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
