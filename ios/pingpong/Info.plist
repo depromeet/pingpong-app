@@ -63,5 +63,10 @@
 	</array>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>NSApptransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitaryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
