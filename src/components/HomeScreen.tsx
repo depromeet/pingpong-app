@@ -52,7 +52,7 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    ㅂmarginTop: 40,
+    marginTop: 40,
   },
 });
 
