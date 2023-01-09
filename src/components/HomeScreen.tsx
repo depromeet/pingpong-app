@@ -42,6 +42,10 @@ const HomeScreen = () => {
           source={{ uri: BASE_URL }}
           allowsBackForwardNavigationGestures
           overScrollMode="never"
+          originWhitelist={['*']}
+          javaScriptEnabled
+          domStorageEnabled
+          sharedCookiesEnabled
           onMessage={onEventReceive}
         />
       </View>
