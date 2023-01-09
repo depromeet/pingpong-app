@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { Linking, StatusBar, StyleSheet, View } from 'react-native';
 import { WebView, WebViewMessageEvent } from 'react-native-webview';
 import { useAppState } from '../hooks/state';
+import handleNavigate from '../utils/handleNavigate';
 
 const HomeScreen = () => {
   const webviewRef = useRef<WebView>(null);
@@ -40,6 +41,9 @@ const HomeScreen = () => {
         <WebView
           ref={webviewRef}
           source={{ uri: BASE_URL }}
+          onNavigationStateChange={handleNavigate}
+          onShouldStartLoadWithRequest={handleNavigate}
+          bounces={false}
           allowsBackForwardNavigationGestures
           overScrollMode="never"
           originWhitelist={['*']}
