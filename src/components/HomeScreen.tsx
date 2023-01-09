@@ -36,7 +36,7 @@ const HomeScreen = () => {
 
   return (
     <>
-      <StatusBar barStyle="default" />
+      <StatusBar barStyle="default" backgroundColor="#E7E7E7"/>
       <View style={styles.container}>
         <WebView
           ref={webviewRef}
